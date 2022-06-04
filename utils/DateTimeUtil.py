@@ -16,6 +16,10 @@ class DateTime:
     # 取得今天日期
     def getCurrentDate(pattern = DATE_PATTERN_1):
         return datetime.now().strftime(pattern)
+    
+    # 取得今年民國年
+    def getCurrentYear():
+        return datetime.now().year - 1911
 
     # 根據參數取得對應日期字串
     def getDate(year, month, day, pattern = DATE_PATTERN_1):
